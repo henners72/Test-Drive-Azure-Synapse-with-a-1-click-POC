@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "select * from sys.databases\n\n\nCREATE LOGIN PowerBI WITH PASSWORD = 'Passpass123@#';\n\nCREATE USER PowerBI FROM LOGIN PowerBI;\n\nEXEC sp_addrolemember 'db_datareader', 'PowerBI';",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mebg42qysvt3bfckpocws1p1",
+				"poolName": "mebg42qysvt3bfckpocws1p1"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
